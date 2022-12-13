@@ -1,10 +1,12 @@
 beautifulsoup4==4.11.1
 contourpy==1.0.6
 cycler==0.11.0
+et-xmlfile==1.1.0
 fonttools==4.38.0
 kiwisolver==1.4.4
 matplotlib==3.6.2
 numpy==1.23.5
+openpyxl==3.0.10
 packaging==22.0
 pandas==1.5.2
 Pillow==9.3.0
@@ -16,3 +18,4 @@ seaborn==0.12.1
 six==1.16.0
 soupsieve==2.3.2.post1
 SQLAlchemy==1.4.45
+xmltodict==0.13.0
