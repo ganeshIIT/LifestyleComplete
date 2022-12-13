@@ -17,7 +17,7 @@ def full_load(df, tbl, hasindex = True, custom={"id":"INT PRIMARY KEY"}):
             #.assign(id = lambda x: x['id']+1)
             .pipe(timetoseconds)
             )
-    list_df = np.array_split(df, len(df)//10000 +1)
+    list_df = np.array_split(df, len(df)//100000 +1)
     with pyodbc.connect(helper.get_connstring()) as conn:
         helper.to_sqlserver(df =list_df[0], name=tbl, conn = conn, if_exists="replace", custom=custom, temp=False)
         conn.commit()
